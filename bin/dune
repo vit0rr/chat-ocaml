@@ -1,0 +1,5 @@
+(executable
+ (public_name chat_ocaml)
+ (name main)
+(preprocess (pps lwt_ppx))
+ (libraries chat_ocaml lwt websocket websocket-lwt-unix cohttp-lwt-unix logs logs.fmt))
